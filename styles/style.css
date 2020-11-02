@@ -1,0 +1,56 @@
+:root {
+    --main-color: #bd31a1;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container svg polygon {
+    fill: var(--main-color);
+}
+
+.main-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+    
+}
+
+.content span {
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    color: var(--main-color)
+}
+
+.content button {
+    width: 200px;
+    padding: 10px 20px 3px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-family: 'Baloo Tammudu 2', cursive;
+    cursor: pointer;
+    background: transparent;
+
+}
